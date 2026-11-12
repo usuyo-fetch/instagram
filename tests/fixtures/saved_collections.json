@@ -1,0 +1,34 @@
+{
+    "_fixture": "NOT MEASURED. Hand-written, invented content. The shape of saved_collections.json is a guess: scrollback does not read this file, so the layout (a collection entry without a link, then post entries with string_map_data 'Name' carrying href and timestamp) is not confirmed by any source; see NOTES.md.",
+    "saved_saved_collections": [
+        {
+            "title": "Collection",
+            "string_map_data": {
+                "Name": {
+                    "value": "Coffee",
+                    "timestamp": 1789500000
+                }
+            }
+        },
+        {
+            "title": "bean_lab",
+            "string_map_data": {
+                "Name": {
+                    "href": "https://www.instagram.com/p/DEMOcoll001/",
+                    "value": "bean_lab",
+                    "timestamp": 1789800000
+                }
+            }
+        },
+        {
+            "title": "plain_user",
+            "string_map_data": {
+                "Name": {
+                    "href": "https://www.instagram.com/reel/DEMOsaved02/",
+                    "value": "plain_user",
+                    "timestamp": 1789750000
+                }
+            }
+        }
+    ]
+}

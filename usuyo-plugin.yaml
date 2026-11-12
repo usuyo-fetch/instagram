@@ -1,0 +1,37 @@
+# Instagram 获取插件：读你向 Instagram 申请下载的 JSON 数据，列出收藏和赞过的帖子（链接条目）。
+# 方法列表和 README 的方法表、usuyo 仓库 docs/platforms/routes.md 第 14 节的 instagram 一行对应（那里只有 export 一行）。
+# 单条帖子的内容由别的平台插件按链接去取（yt-dlp 插件认 instagram.com 的帖子链接）。
+# 交来的文件由宿主放进 ${INPUT}；插件不联网，也不写 ${INPUT}。
+protocol: 1
+id: usuyo-fetch/instagram
+kind: fetch
+name: Instagram
+description: 读你申请下载的 JSON 数据（整个 zip，或其中的 saved_posts.json、liked_posts.json），列出收藏和赞过的帖子，只交链接、作者和收藏时间
+version: 0.1.0
+license: MIT
+maintainers: [Fldicoahkiin]
+upstream:
+  - name: scrollback（数据下载里收藏和赞过的文件形状、字符编码）
+    url: https://github.com/meizuflux/scrollback
+    license: MIT
+platforms: [instagram]
+methods:
+  - id: export
+    name: 数据下载（JSON）
+    access: official-export
+    login: none
+    account: none
+    capabilities:
+      list:
+        order: newest-first
+        files: ["instagram-*.zip", "saved_posts.json", "saved_collections.json", "liked_posts.json"]
+        reads: Instagram「下载你的信息」选 JSON 格式得到的 zip，或其中 saved_posts.json、saved_collections.json、liked_posts.json 单个文件
+permissions:
+  fs:
+    read: ["${INPUT}"]
+  network: {mode: none}
+  env: []
+  devices: []
+  gpu: false
+run:
+  command: ["${PLUGIN_DIR}/usuyo-fetch-instagram"]

@@ -1,0 +1,23 @@
+{
+    "_fixture": "NOT MEASURED. Hand-written, invented content. Shape of your_instagram_activity/likes/liked_posts.json (likes_media_likes, string_list_data) as in meizuflux/scrollback public/demo_data and src/import/interactions.ts (MIT); see NOTES.md.",
+    "likes_media_likes": [
+        {
+            "title": "kayacollins2",
+            "string_list_data": [
+                {
+                    "href": "https://www.instagram.com/p/DEMOlike0001/",
+                    "timestamp": 1790100000
+                }
+            ]
+        },
+        {
+            "title": "marÃ­a_92",
+            "string_list_data": [
+                {
+                    "href": "https://www.instagram.com/tv/DEMOlike0002/",
+                    "timestamp": 1789600000
+                }
+            ]
+        }
+    ]
+}

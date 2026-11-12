@@ -1,0 +1,15 @@
+{
+    "_fixture": "NOT MEASURED. Hand-written, invented content. The newer label_values shape of an interaction file, as described in the comment block of meizuflux/scrollback src/import/interactions.ts (MIT); see NOTES.md.",
+    "likes_media_likes": [
+        {
+            "timestamp": 1790200000,
+            "media": [],
+            "label_values": [
+                {"label": "URL", "value": "https://www.instagram.com/p/DEMOlabel001/"},
+                {"label": "Caption", "value": "ignored"},
+                {"dict": [{"dict": [{"label": "Username", "value": "owner_one"}]}], "title": "Owner"}
+            ],
+            "fbid": "17900000000000001"
+        }
+    ]
+}

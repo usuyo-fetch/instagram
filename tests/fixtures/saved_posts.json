@@ -1,0 +1,54 @@
+{
+    "_fixture": "NOT MEASURED. Hand-written, invented content. Shape of your_instagram_activity/saved/saved_posts.json (saved_saved_media, string_map_data 'Saved on') as in meizuflux/scrollback public/demo_data and src/import/interactions.ts (MIT); see NOTES.md. Titles are written the way Instagram writes them: UTF-8 bytes as \\u00XX escapes.",
+    "saved_saved_media": [
+        {
+            "title": "cafÃ©_roasters",
+            "string_map_data": {
+                "Saved on": {
+                    "href": "https://www.instagram.com/p/DEMOsaved01/",
+                    "timestamp": 1790000000,
+                    "value": "Saved on"
+                }
+            }
+        },
+        {
+            "title": "plain_user",
+            "string_map_data": {
+                "Saved on": {
+                    "href": "https://www.instagram.com/reel/DEMOsaved02/",
+                    "timestamp": 1789700000,
+                    "value": "Saved on"
+                }
+            }
+        },
+        {
+            "title": "ä½ å¥½",
+            "string_map_data": {
+                "Saved on": {
+                    "href": "https://www.instagram.com/p/DEMOsaved03/",
+                    "timestamp": 1789900000,
+                    "value": "Saved on"
+                }
+            }
+        },
+        {
+            "title": "no_time_user",
+            "string_map_data": {
+                "Saved on": {
+                    "href": "https://www.instagram.com/p/DEMOsaved04/",
+                    "value": "Saved on"
+                }
+            }
+        },
+        {
+            "title": "a_profile",
+            "string_map_data": {
+                "Saved on": {
+                    "href": "https://www.instagram.com/a_profile/",
+                    "timestamp": 1789600000,
+                    "value": "Saved on"
+                }
+            }
+        }
+    ]
+}
