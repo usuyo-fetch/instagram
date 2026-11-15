@@ -1,6 +1,6 @@
 # Instagram 获取插件：读你向 Instagram 申请下载的 JSON 数据，列出收藏和赞过的帖子（链接条目）。
 # 方法列表和 README 的方法表、usuyo 仓库 docs/platforms/routes.md 第 14 节的 instagram 一行对应（那里只有 export 一行）。
-# 单条帖子的内容由别的平台插件按链接去取（yt-dlp 插件认 instagram.com 的帖子链接）。
+# 本插件只列链接；帖子内容、视频文件：未实现。
 # 交来的文件由宿主放进 ${INPUT}；插件不联网，也不写 ${INPUT}。
 protocol: 1
 id: usuyo-fetch/instagram

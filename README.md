@@ -2,11 +2,21 @@
 
 Instagram 的获取插件，供 [usuyo](https://github.com/usuyo/usuyo) 调用：读你申请下载的 JSON 数据，把收藏和赞过的帖子列成链接条目。
 
-| 方法 | 清单里的 id | 取得 | 账号 | 层级 | 现状 |
-|---|---|---|---|---|---|
-| 数据下载（JSON） | `export` | 存过的：收藏、收藏夹里的帖子、赞过的帖子，每条是帖子链接，带作者名和收藏或赞的时间；HTML 形式的下载会提示重新申请 JSON | 不使用（你向 Instagram 申请下载） | `official-export` | 已实现；只做了离线测试，样例手写，没有对着真实下载核对；`saved_collections.json` 的形状没有依据，是猜的 |
+| 功能 | 实现方式（方法 id） | 账号 | 风险层级 | 状态 |
+|---|---|---|---|---|
+| 读官方导出：收藏、收藏夹、赞过的帖子 | 数据下载 JSON（`export`） | 不使用（你向 Instagram 申请下载） | `official-export`，默认开 | 已实现（离线测试，样例手写，没有对着真实下载核对；`saved_collections.json` 的形状没有依据） |
+| 按链接取单条帖子 | 无 | 无 | 无 | 未实现 |
+| 视频文件 | 无 | 无 | 无 | 未实现 |
 
-文件形状和文字编码参考 [scrollback](https://github.com/meizuflux/scrollback)（MIT，Copyright (c) 2024 meizuflux）；单条帖子的内容由别的插件按链接去取。
+风险层级用清单里 `access` 的原词；`private-api`、`client-hook` 默认关，其余层级默认开。
+
+## 方法
+
+### `export`
+
+读 Instagram「下载你的信息」选 JSON 格式得到的 zip，或其中的 `saved_posts.json`、`saved_collections.json`、`liked_posts.json`。每条是帖子链接，带作者名和收藏或赞的时间；HTML 形式的下载会提示重新申请 JSON。插件不联网。
+
+文件形状和文字编码参考 [scrollback](https://github.com/meizuflux/scrollback)（MIT，Copyright (c) 2024 meizuflux）。
 
 ## 开发
 

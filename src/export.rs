@@ -105,7 +105,7 @@ fn item_link(item: &Value) -> Option<Link> {
 }
 
 /// 帖子链接里的短码：`/p/<码>/`、`/reel/<码>/`、`/reels/<码>/`、`/tv/<码>/`，前面可以有用户名。
-/// 主页、故事一类的链接回 `None`。短码的写法同 ytdlp 插件：区分大小写，`[A-Za-z0-9_-]`。
+/// 主页、故事一类的链接回 `None`。短码区分大小写，`[A-Za-z0-9_-]`。
 fn shortcode(href: &str) -> Option<String> {
     let url = url::Url::parse(href).ok()?;
     if !matches!(url.scheme(), "http" | "https") {
